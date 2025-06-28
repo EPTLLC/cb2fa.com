@@ -1,0 +1,24 @@
+[0m[33mWarning[0m "exports" field should be specified when specifying a "name".
+    at file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json
+Unsupported compiler options in "file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json".
+  The following options were ignored:
+    allowJs
+[INFO] 🚀 Starting CB2FA Matrix Bot...
+[INFO] Invited users: brabus
+[INFO] Admin for auth: brabus
+[INFO] Language: en
+[INFO] ✅ Logged in to Matrix successfully
+[INFO] ✅ Found CB2FA room: !GUCHjzpFTBkooukTdY:matrix.alltest.tech
+Listening on http://127.0.0.1:10000/
+[INFO] ✅ Sent Excel-style table to Matrix
+[INFO] 📝 Created auth request for q (fbf2829b)
+[INFO] Request denied by brabus
+[INFO] ✅ Sent Excel-style table to Matrix
+[INFO] 📝 Created auth request for q (b03f10a3)
+[INFO] Request denied by brabus
+[INFO] ✅ Sent Excel-style table to Matrix
+[INFO] 📝 Created auth request for q (158af556)
+[INFO] Request denied by brabus
+[INFO] ✅ Sent Excel-style table to Matrix
+[INFO] 📝 Created auth request for q (2fd78842)
+[INFO] Request denied by brabus

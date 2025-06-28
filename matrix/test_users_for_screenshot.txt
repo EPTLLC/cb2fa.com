@@ -1,0 +1,20 @@
+# CB2FA Screenshot Test Data
+
+Тестовые пользователи для демонстрации:
+
+1. @ivan:matrix.example.com
+   - IP: 192.168.1.100 
+   - Device: Element Desktop (Linux)
+   - Time: 14:23:45
+
+2. @maria:matrix.example.com  
+   - IP: 10.0.0.50
+   - Device: Element Mobile (Android)
+   - Time: 14:24:12
+
+3. @alex:matrix.example.com
+   - IP: 172.16.0.25
+   - Device: FluffyChat (iOS)  
+   - Time: 14:24:38
+
+Можно использовать для создания скриншота аккуратной таблицы CB2FA

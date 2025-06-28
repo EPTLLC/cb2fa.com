@@ -1,0 +1,27 @@
+nohup: ignoring input
+[0m[33mWarning[0m "exports" field should be specified when specifying a "name".
+    at file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json
+Unsupported compiler options in "file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json".
+  The following options were ignored:
+    allowJs
+[INFO] 🌐 Starting CB2FA Middleware...
+[INFO] Matrix domain: your-matrix-domain.com
+[INFO] Synapse URL: http://localhost:8008
+[INFO] CB2FA Bot URL: http://127.0.0.1:10000
+Listening on http://127.0.0.1:9999/
+[DEBUG] Forwarding to Synapse: http://localhost:8008/
+[INFO] 🔐 Login attempt: bob
+[INFO] ✅ Login successful for: bob
+[INFO] 🔄 Regular user - creating CB2FA request: bob - checking queue...
+[INFO] Queue clear for bob, proceeding...
+[INFO] 🔐 Login attempt: maya
+[INFO] ✅ Login successful for: maya
+[INFO] 🔄 Regular user - creating CB2FA request: maya - checking queue...
+[INFO] Queue clear for maya, proceeding...
+[WARN] ❌ CB2FA denied for bob by brabus
+[WARN] ❌ CB2FA denied for maya by brabus
+[INFO] 🔐 Login attempt: alice
+[INFO] ✅ Login successful for: alice
+[INFO] 🔄 Regular user - creating CB2FA request: alice - checking queue...
+[INFO] Queue clear for alice, proceeding...
+[WARN] ⏰ CB2FA timeout for alice

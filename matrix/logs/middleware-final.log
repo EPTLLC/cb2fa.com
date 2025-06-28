@@ -1,0 +1,10 @@
+[0m[33mWarning[0m "exports" field should be specified when specifying a "name".
+    at file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json
+Unsupported compiler options in "file:///var/alltest.tech/dev/cb2fa.com/matrix/deno.json".
+  The following options were ignored:
+    allowJs
+[INFO] 🌐 Starting CB2FA Middleware...
+Listening on http://127.0.0.1:9999/
+[INFO] 🔐 Login attempt: q
+[INFO] ✅ Login successful for: q
+[INFO] 🔄 Regular user - creating CB2FA request: q
