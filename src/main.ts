@@ -1,12 +1,15 @@
-// CB2FA - Community-Based Two-Factor Authentication
-// Made for Matrix with love by EasyProTech LLC (www.easypro.tech)
-// Developer: Brabus
+// CB2FA - Community-Based Two-Factor Authentication v2.0.0
+// Company: EasyProTech LLC (www.easypro.tech)
+// Dev: Brabus
+// Created: 2025-08-10 21:40 MSK
+// Telegram: https://t.me/easyprotech
 
+// @ts-ignore
 import { serve } from "https://deno.land/std@0.208.0/http/server.ts";
 import { config } from "./config.ts";
 import { log } from "./logger.ts";
 import { t, availableLanguages } from "./i18n.ts";
-import { matrixClient } from "./matrix/client.ts";
+import { matrixClient } from "./client.ts";
 
 log.info(t("botStarting"));
 log.info(`Invited users: ${config.cb2fa.invitedUsers.join(", ")}`);
@@ -29,7 +32,7 @@ const handler = async (req: Request): Promise<Response> => {
             status: "healthy", 
             language: config.language,
             domain: config.matrix.domain,
-            version: "1.0.0",
+            version: "2.0.0",
             supportedLanguages: availableLanguages
         }), {
             headers: { "Content-Type": "application/json" },

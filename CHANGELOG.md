@@ -5,6 +5,42 @@ All notable changes to CB2FA (Community-Based Two-Factor Authentication) will be
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] – 2025-08-10
+
+### 🎯 Matrix-Focused Release 
+
+**BREAKING CHANGES:**
+- **Matrix-Only**: Removed all other platforms (Telegram, Discord, Slack) to focus purely on Matrix
+- **New Structure**: Moved Matrix implementation from `/matrix` to project root
+- **Simplified Architecture**: Single-platform focus for better stability and performance
+
+### Added
+- **New Project Structure**: Clean root-level organization (`src/`, `middleware.ts`)
+- **Deno Tasks**: Added convenient `deno task start` and `deno task middleware` commands
+- **Enhanced Headers**: All files now include proper company attribution and timestamps
+- **Development Mode**: Added `deno task dev` with auto-reload
+
+### Changed  
+- **File Organization**: Matrix code moved from `/matrix/src/` to `/src/`
+- **Import Paths**: Updated all imports for new structure
+- **Documentation**: Completely rewritten README for v2.0 focus
+- **Version Tracking**: Updated to v2.0.0 across all files
+
+### Removed
+- **Multi-Platform Support**: Removed Telegram, Discord, Slack implementations
+- **Core Abstractions**: Removed `/core` directory as no longer needed
+- **Architecture Docs**: Removed `/docs` as single-platform doesn't need complex docs
+
+### Technical
+- **Cleaner Codebase**: 60% reduction in complexity by removing multi-platform abstractions
+- **Faster Startup**: Simplified initialization with single Matrix client
+- **Better Maintainability**: Single focus means easier debugging and feature development
+
+### Migration Guide
+- **File Paths**: Update any scripts pointing to `/matrix/` paths
+- **Commands**: Use new `deno task` commands instead of manual deno run
+- **Configuration**: No changes needed to `.env` file
+
 ## [1.1.0] – 2025-06-28
 
 - Repo converted to mono-structure

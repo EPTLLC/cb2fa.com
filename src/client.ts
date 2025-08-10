@@ -1,10 +1,12 @@
-// CB2FA - Community-Based Two-Factor Authentication
-// Made for Matrix with love by EasyProTech LLC (www.easypro.tech)
-// Developer: Brabus
+// CB2FA - Community-Based Two-Factor Authentication v2.0.0
+// Company: EasyProTech LLC (www.easypro.tech)
+// Dev: Brabus
+// Created: 2025-08-10 21:40 MSK
+// Telegram: https://t.me/easyprotech
 
-import { config } from "../config.ts";
-import { log } from "../logger.ts";
-import { t } from "../i18n.ts";
+import { config } from "./config.ts";
+import { log } from "./logger.ts";
+import { t } from "./i18n.ts";
 
 export class MatrixClient {
     private accessToken = "";

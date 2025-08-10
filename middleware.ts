@@ -1,11 +1,14 @@
-// CB2FA - Community-Based Two-Factor Authentication
-// Made for Matrix with love by EasyProTech LLC (www.easypro.tech)
-// Developer: Brabus
+// CB2FA - Community-Based Two-Factor Authentication v2.0.0
+// Company: EasyProTech LLC (www.easypro.tech)
+// Dev: Brabus
+// Created: 2025-08-10 21:40 MSK
+// Telegram: https://t.me/easyprotech
 
+// @ts-ignore
 import { serve } from "https://deno.land/std@0.208.0/http/server.ts";
-import { config } from "../src/config.ts";
-import { log } from "../src/logger.ts";
-import { t } from "../src/i18n.ts";
+import { config } from "./src/config.ts";
+import { log } from "./src/logger.ts";
+import { t } from "./src/i18n.ts";
 
 // Make Synapse URL configurable
 const SYNAPSE_URL = config.matrix.homeserverUrl;
@@ -229,7 +232,8 @@ const handler = async (req: Request): Promise<Response> => {
     if (url.pathname === "/health") {
         return new Response(JSON.stringify({ 
             status: "healthy",
-            middleware: "cb2fa-portable",
+            middleware: "cb2fa-v2",
+            version: "2.0.0",
             domain: config.matrix.domain,
             synapse_url: SYNAPSE_URL,
             bot_url: CB2FA_BOT_URL

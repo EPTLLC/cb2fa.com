@@ -1,6 +1,8 @@
-// CB2FA - Community-Based Two-Factor Authentication
-// Made for Matrix with love by EasyProTech LLC (www.easypro.tech)
-// Developer: Brabus
+// CB2FA - Community-Based Two-Factor Authentication v2.0.0
+// Company: EasyProTech LLC (www.easypro.tech)
+// Dev: Brabus
+// Created: 2025-08-10 21:40 MSK
+// Telegram: https://t.me/easyprotech
 
 import { config } from "./config.ts";
 
@@ -120,7 +122,7 @@ const messages = {
         roomFound: "✅ Salon CB2FA trouvé",
         botReady: "✅ Bot CB2FA prêt",
         httpServerStarted: "🌐 Serveur HTTP démarré sur",
-        botStarted: "�� Bot CB2FA démarré avec succès!",
+        botStarted: "🎯 Bot CB2FA démarré avec succès!",
         
         loginRequest: "🔐 Demande de connexion",
         user: "Utilisateur",

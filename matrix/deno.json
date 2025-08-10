@@ -1,9 +1,0 @@
-{
-  "name": "cb2fa",
-  "version": "1.0.0",
-  "description": "CB2FA - Community-Based Two-Factor Authentication. Made for Matrix with love by EasyProTech LLC (www.easypro.tech). Developer: Brabus",
-  "compilerOptions": {
-    "allowJs": true,
-    "lib": ["deno.window"]
-  }
-}
