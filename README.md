@@ -98,8 +98,8 @@ User Login → nginx → CB2FA Middleware → Queue → Bot → Matrix Room → 
 
 1. **Clone Repository**
    ```bash
-   git clone <repository-url>
-   cd cb2fa
+   git clone https://github.com/EPTLLC/cb2fa.com.git
+   cd cb2fa.com
    ```
 
 2. **Install Deno**
